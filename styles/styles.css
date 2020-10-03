@@ -1,68 +1,67 @@
 body {
-    padding: 0;
-    margin: 0;
-    color: #eeeeee;
+  padding: 0;
+  margin: 0;
+  color: #eeeeee;
 }
 
-h1{
-    font-family: 'Sacramento', cursive;
-    font-size: 10vmax;
-    padding: 1.5rem 0;
-    margin: 1.2rem auto 0 auto;
+h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 10vmax;
+  padding: 1.5rem 0;
+  margin: 1.2rem auto 0 auto;
 }
 
-#landingPage{
-    background-color: #222831;
+#landingPage {
+  background-color: #222831;
 }
 
-.container-fluid{
-    padding: 2% 3%;
+.container-fluid {
+  padding: 2% 3%;
 }
 
 /* Navigation Bar */
-.navbar{
-    font-size: 1.5rem;
-    padding: 0 0 4rem;
+.navbar {
+  font-size: 1.5rem;
+  padding: 0 0 4rem;
 }
 
-.navbar-nav{
-    padding: 2%;
+.navbar-nav {
+  padding: 2%;
 }
 
-.nav-item{
-    padding: 0 12px;
+.nav-item {
+  padding: 0 12px;
 }
 
 .nav-link {
-    font-family: 'Montserrat', sans-serif;
-    color: #00adb5;
-    
+  font-family: "Montserrat", sans-serif;
+  color: #00adb5;
 }
 
 .nav-item:hover .nav-link {
-    color: #eeeeee;
+  color: #eeeeee;
 }
 
-.navbar-toggler-icon{
-    color: #00adb5;
+.navbar-toggler-icon {
+  color: #00adb5;
 }
 
-.navbar-toggler:focus{
-    outline: none;
+.navbar-toggler:focus {
+  outline: none;
 }
 
-.intro-line{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5vmax;
-    line-height: 1.5;
-    padding: 0 1.5rem 1.5rem;
+.intro-line {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vmax;
+  line-height: 1.5;
+  padding: 0 1.5rem 1.5rem;
 }
 
 .background-container {
-    height: 95%;
-    width: 95%;
-    margin: 0 auto;
-    padding: 1.5rem;
-    line-height: 1.5;
-    background-color: #222831;
-  }
+  height: 32vmin;
+  width: 200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  line-height: 1.5;
+  background-color: #222831;
+}
