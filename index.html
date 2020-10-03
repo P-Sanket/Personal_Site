@@ -21,6 +21,47 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Particle JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js" crossorigin="anonymous"></script>
+    <script>
+      window.onload = function(){
+        Particles.init({
+          //normal options
+          selector: '.background',
+          maxParticles: 30,
+          connectParticles: true,
+          color: '#48F2E3',
+          sizeVariations: 4,
+          
+          //options for breakpoints
+  
+          responsive: [
+            {
+              breakpoint: 768,
+              options:{
+                maxParticles: 20,
+                color: '#00adb5',
+                connectParticles: true
+              }
+            },
+            {
+              breakpoint: 425,
+              options:{
+                maxParticles: 15,
+                connectParticles: true
+              }
+            },
+            {
+              breakpoint: 280,
+              options: {
+                maxParticles: 0
+              }
+            }
+          ]
+        });
+      };
+    </script>
 </head>
 
 <body>
@@ -72,19 +113,14 @@
           <h1>I'm Sanket</h1>
         </div>
         <div class="col-lg-12 text-center">
-          <p class="intro-line">Tech. Enthusiast | Passionate Software Developer | Video Games</p>
+          <p class="intro-line">Tech. Enthusiast | Loves Programming | Avid Gamer</p>
+        </div>
+        <div class="col-lg-12 background-container">
+          <canvas class="background"></canvas>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <img src="./images/Montains.svg" alt="mountains" class="mountains">
-        </div> 
-      </div>  
     </div>
   </section>
-
 </body>
-
 
 </html>
