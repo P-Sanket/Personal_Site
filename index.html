@@ -1,126 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sanket Patil - Programmer | Gamer</title>
 
     <!-- Custom CSS Stylesheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/socialIconAnimation.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/socialIconAnimation.css" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/5c82310bf7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5c82310bf7.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- bootstrap scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Particle JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
-      window.onload = function(){
+      window.onload = function () {
         Particles.init({
           //normal options
-          selector: '.background',
-          maxParticles: 30,
-          connectParticles: true,
-          color: '#48F2E3',
-          sizeVariations: 4,
-          
+          selector: ".background",
+          maxParticles: 50,
+          connectParticles: false,
+          color: "#00adb5",
+          sizeVariations: 5,
+
           //options for breakpoints
-  
+
           responsive: [
             {
               breakpoint: 768,
-              options:{
+              options: {
                 maxParticles: 20,
-                color: '#00adb5',
-                connectParticles: true
-              }
+                color: "#00adb5",
+                connectParticles: false,
+              },
             },
             {
               breakpoint: 425,
-              options:{
+              options: {
                 maxParticles: 15,
-                connectParticles: true
-              }
+                connectParticles: false,
+              },
             },
             {
               breakpoint: 280,
               options: {
-                maxParticles: 0
-              }
-            }
-          ]
+                maxParticles: 0,
+              },
+            },
+          ],
         });
       };
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <section id="landingPage">
+      <canvas class="background"></canvas>
 
-  <section id="landingPage">
+      <div class="container-fluid">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-md navbar-custom">
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarContent"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-chevron-circle-down fa-2x"></i>
+            </span>
+          </button>
 
-    <div class="container-fluid">
-      <!-- navigation bar -->
-      <nav class="navbar navbar-expand-md navbar-custom">
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-            <i class="fas fa-chevron-circle-down fa-2x"></i>
-          </span>
-        </button>
-          
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="social-icons">
-          <a class="icon" href="#">
-            <i class="fab fa-github"></i>
-          </a>
+          <div class="social-icons">
+            <a class="icon" href="#">
+              <i class="fab fa-github"></i>
+            </a>
 
-          <a class="icon" href="#">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
+            <a class="icon" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </nav>
 
-        </div>
-      </nav>
-    
-
-      <!-- Intro Text -->
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1>I'm Sanket</h1>
-        </div>
-        <div class="col-lg-12 text-center">
-          <p class="intro-line">Tech. Enthusiast | Loves Programming | Avid Gamer</p>
-        </div>
-        <div class="col-lg-12 background-container">
-          <canvas class="background"></canvas>
+        <!-- Intro Text -->
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h1>I'm Sanket</h1>
+          </div>
+          <div class="col-lg-12 text-center">
+            <p class="intro-line">
+              Tech. Enthusiast | Loves Programming | Avid Gamer
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</body>
+    </section>
 
+    <section id="skills">
+      <div
+        id="skillsCarouselWithControls"
+        class="carousel slide"
+        data-ride="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="carousel-box col-lg-6">
+                <i class="skill-icon fas fa-business-time fa-5x"></i>
+                <h3 class="object-heading">Skill heading</h3>
+                <p>Brief Skill description</p>
+              </div>
+              <div class="carousel-box col-lg-6">
+                <i class="skill-icon fas fa-business-time fa-5x"></i>
+                <h3 class="object-heading">Skill heading</h3>
+                <p>Brief Skill description</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="carousel-box col-lg-6">
+                <i class="skill-icon fas fa-business-time fa-5x"></i>
+                <h3 class="object-heading">Skill heading</h3>
+                <p>Brief Skill description</p>
+              </div>
+              <div class="carousel-box col-lg-6">
+                <i class="skill-icon fas fa-business-time fa-5x"></i>
+                <h3 class="object-heading">Skill heading</h3>
+                <p>Brief Skill description</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="carousel-box col-lg-6">
+                <i class="skill-icon fas fa-business-time fa-5x"></i>
+                <h3 class="object-heading">Skill heading</h3>
+                <p>Brief Skill description</p>
+              </div>
+              <div class="carousel-box col-lg-6">
+                <i class="skill-icon fas fa-business-time fa-5x"></i>
+                <h3 class="object-heading">Skill heading</h3>
+                <p>Brief Skill description</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#skillsCarouselWithControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-button"
+            ><i class="fas fa-chevron-circle-left fa-2x"></i
+          ></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#skillsCarouselWithControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-button"
+            ><i class="fas fa-chevron-circle-right fa-2x"></i
+          ></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="work">
+      <div
+        id="workCarouselWithControls"
+        class="carousel slide"
+        data-ride="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="carousel-box col-lg-12">
+                <i class="work-icon fas fa-business-time fa-5x"></i>
+                <h3 class="object-heading">Project</h3>
+                <p>Brief Project Details</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="carousel-box col-lg-12">
+                <i class="work-icon fas fa-business-time fa-5x"></i>
+                <h3 class="object-heading">Project</h3>
+                <p>Brief Project Details</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="carousel-box col-lg-12">
+                <i class="work-icon fas fa-business-time fa-5x"></i>
+                <h3 class="object-heading">Project</h3>
+                <p>Brief Project Details</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#workCarouselWithControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-button"
+            ><i class="fas fa-chevron-circle-left fa-2x"></i
+          ></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#workCarouselWithControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-button"
+            ><i class="fas fa-chevron-circle-right fa-2x"></i
+          ></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="row">
+        <div class="about-content-pic col-lg-6">
+          <img
+            class="profile-pic"
+            src="./images/Profile_picture.jpg"
+            alt="profile picture"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h3 class="about-intro-line">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            dapibus consequat dignissim. Morbi sed ante quis leo varius
+            consectetur nec.
+          </h3>
+          <p class="about-para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+            luctus risus. Nulla sollicitudin est eget turpis viverra, in
+            ultricies lorem dignissim. Proin vel urna lacus. Vivamus maximus ex
+            non neque rhoncus bibendum. Suspendisse sagittis, augue id facilisis
+            posuere, nisl felis imperdiet dui, at blandit augue justo eget
+            ipsum. Nullam sed nulla at dui accumsan egestas ut non erat.
+            Vestibulum enim tortor, convallis quis nibh non, porta auctor
+            tortor.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

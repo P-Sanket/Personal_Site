@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   color: #eeeeee;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -11,15 +12,38 @@ h1 {
   margin: 1.2rem auto 0 auto;
 }
 
+h3 {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 1.5rem;
+}
+
+.carousel-control-button {
+  color: #00adb5;
+}
+
+.carousel-item {
+  padding: 7% 17%;
+}
+
+.carousel-box {
+  padding: 5%;
+}
+
+.object-heading {
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+/* Navigation Bar  and Landing Page*/
 #landingPage {
+  position: relative;
   background-color: #222831;
+  padding-bottom: 7%;
 }
 
 .container-fluid {
   padding: 2% 3%;
 }
 
-/* Navigation Bar */
 .navbar {
   font-size: 1.5rem;
   padding: 0 0 4rem;
@@ -34,7 +58,6 @@ h1 {
 }
 
 .nav-link {
-  font-family: "Montserrat", sans-serif;
   color: #00adb5;
 }
 
@@ -51,17 +74,80 @@ h1 {
 }
 
 .intro-line {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.5vmax;
   line-height: 1.5;
   padding: 0 1.5rem 1.5rem;
 }
 
-.background-container {
-  height: 32vmin;
-  width: 200px;
-  margin: 0 auto;
-  padding: 1.5rem;
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #eeeeee;
+  color: #222831;
+  text-align: center;
+}
+
+.skill-icon {
+  color: #393e46;
+  margin-bottom: 1rem;
+}
+
+.skill-icon:hover {
+  color: #222831;
+}
+
+/* Work Section */
+#work {
+  background-color: #393e46;
+  text-align: center;
+}
+
+.work-icon {
+  margin-bottom: 1rem;
+}
+
+.work-icon:hover {
+  color: #00adb5;
+}
+
+/* About section */
+#about {
+  background-color: #eeeeee;
+  padding: 3% 5%;
+  text-align: center;
+  color: #393e46;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 350px;
+  border-radius: 100%;
+  padding: 2%;
+  margin: 2%;
+}
+
+.about-intro-line {
+  padding: 3%;
+  margin: 2% auto;
+}
+
+.about-para {
   line-height: 1.5;
-  background-color: #222831;
+  padding: 3%;
+  margin: 2% auto;
+}
+
+/* Media queries */
+@media (max-width: 750px) {
+  .profile-pic {
+    width: 50%;
+    height: 100%;
+  }
 }

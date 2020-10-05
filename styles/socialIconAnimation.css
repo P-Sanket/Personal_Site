@@ -1,15 +1,14 @@
 /* Animation for the social icons */
 
-.social-icons{
+.social-icons {
   position: absolute;
-  top: 0.2rem;
   right: 2.1%;
   margin: 0.5%;
   padding: 0.25vmin 0;
   text-align: center;
 }
 
-.icon{
+.icon {
   display: inline-block;
   width: 3rem;
   height: 2.8rem;
@@ -22,18 +21,18 @@
   position: relative;
 }
 
-.icon i{
+.icon i {
   line-height: 2.8rem;
   font-size: 2rem;
   transition: 0.2s linear;
 }
 
-.icon:hover i{
+.icon:hover i {
   transform: scale(1.2);
   color: #393e46;
 }
 
-.icon::before{
+.icon::before {
   content: "";
   position: absolute;
   width: 120%;
@@ -44,23 +43,29 @@
   top: 90%;
 }
 
-.icon:hover::before{
+.icon:hover::before {
   animation: aaa 0.7s 1;
   top: -10%;
   left: -10%;
 }
 
-@keyframes aaa{
-  0%{
-      left: -110%;
-      top: 90%;
+@keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%;
   }
-  50%{
-      left: 10%;
-      top: -30%;
+  50% {
+    left: 10%;
+    top: -30%;
   }
-  100%{
-      top: -10%;
-      left: -10%;
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+
+@media (max-width: 765px) {
+  .social-icons {
+    top: 0.2rem;
   }
 }
