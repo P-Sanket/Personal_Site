@@ -9,9 +9,9 @@
   <!-- Custom CSS Stylesheets -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./styles/styles.css" />
-  <link rel="stylesheet" href="./styles/socialIconAnimation.css" />
-  <link rel="stylesheet" href="./styles/arrow.css" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="/styles/socialIconAnimation.css" />
+  <link rel="stylesheet" href="/styles/arrow.css" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
@@ -35,7 +35,43 @@
   <!-- Particle JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"
     crossorigin="anonymous"></script>
-  <script src="./particles.js"></script>
+  <script>
+    window.onload = function () {
+    Particles.init({
+      //normal options
+      selector: ".background",
+      maxParticles: 50,
+      connectParticles: false,
+      color: "#00adb5",
+      sizeVariations: 7.5,
+
+      //options for breakpoints
+      responsive: [
+        {
+          breakpoint: 768,
+          options: {
+            maxParticles: 20,
+            color: "#00adb5",
+            connectParticles: false,
+          },
+        },
+        {
+          breakpoint: 425,
+          options: {
+            maxParticles: 15,
+            connectParticles: false,
+          },
+        },
+        {
+          breakpoint: 280,
+          options: {
+            maxParticles: 0,
+          },
+        },
+      ],
+    });
+  };
+  </script>
 </head>
 
 <body>
@@ -65,10 +101,10 @@
             </li>
           </ul>
         </div>
-
-        <div class="social-icons">
+        
+        <div class="icons">
           <a class="icon" href="https://github.com/P-Sanket" target="_blank">
-            <i class=" fab fa-github"></i>
+            <i class="fab fa-github"></i>
           </a>
           <a class="icon" href="https://www.linkedin.com/in/psanket98" target="_blank">
             <i class="fab fa-linkedin-in"></i>
@@ -126,8 +162,7 @@
               </div>
               <h3 class="object-heading">Front-end Frameworks</h3>
               <p>
-                Implementing reponsive web-design through modern frameworks
-                such as Bootstrap 4 and React JS
+                Exposure to modern frameworks such as Bootstrap 4 and React JS
               </p>
             </div>
           </div>
@@ -169,7 +204,7 @@
               </div>
               <h3 class="object-heading">SQL and NoSQL Database Exposure</h3>
               <p>
-                Working with database schemas, Querying databases with T-SQL.
+                Database Modelling & Querying databases with T-SQL.
                 NoSQL with MongoDB and Mongoose
               </p>
             </div>
@@ -234,7 +269,7 @@
                 programming for various test
                 Frameworks in Java. I mainly worked on integrating third party connectors. Throughout my time in the
                 project I gained valuable hands-on experience in progamming and testing API's, Microservices, Building
-                Rest Templates and ustilizing and orchestrating Docker containers.A more detailed account is
+                Rest Templates and ustilising and orchestrating Docker containers. A more detailed account is
                 available on my CV</p>
             </div>
           </div>
@@ -273,7 +308,7 @@
     </div>
     <div class="row">
       <div class="about-content-pic col-lg-6">
-        <img class="profile-pic" src="./images/Profile_picture.jpg" alt="profile picture" />
+        <img class="profile-pic" src="/images/Profile_picture.jpg" alt="profile picture" />
       </div>
       <div class="col-lg-6">
         <h3 class="about-intro-line">
