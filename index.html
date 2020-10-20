@@ -1,351 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sanket Patil - Programmer | Gamer</title>
 
-    <!-- Custom CSS Stylesheets -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/socialIconAnimation.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanket Patil - Programmer | Gamer</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Custom CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/socialIconAnimation.css" />
+  <link rel="stylesheet" href="./styles/arrow.css" />
 
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/5c82310bf7.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
 
-    <!-- bootstrap scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5c82310bf7.js" crossorigin="anonymous"></script>
 
-    <!-- Particle JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./particles.js"></script>
-  </head>
+  <!-- bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 
-  <body>
-    <section id="landingPage">
-      <canvas class="background"></canvas>
+  <!-- Particle JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"
+    crossorigin="anonymous"></script>
+  <script src="./particles.js"></script>
+</head>
 
-      <div class="container-fluid">
-        <!-- navigation bar -->
-        <nav class="navbar navbar-expand-md navbar-custom">
-          <button
-            class="navbar-toggler custom-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarContent"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon">
-              <i class="fas fa-chevron-circle-down fa-2x"></i>
-            </span>
-          </button>
+<body>
+  <section id="landingPage">
+    <canvas class="background"></canvas>
 
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#work">Work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+    <div class="container-fluid">
+      <!-- navigation bar -->
+      <nav class="navbar navbar-expand-md navbar-custom">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-chevron-circle-down fa-2x"></i>
+          </span>
+        </button>
 
-          <div class="social-icons">
-            <a class="icon" href="#">
-              <i class="fab fa-github"></i>
-            </a>
-
-            <a class="icon" href="#">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </nav>
-
-        <!-- Intro Text -->
-        <div class="row">
-          <div class="col-lg-12 text-center intro">
-            <h1>I'm Sanket</h1>
-          </div>
-          <div class="col-lg-12 text-center intro">
-            <p class="intro-line">
-              Tech. Enthusiast | Loves Programming | Avid Gamer
-            </p>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
 
-    <section id="skills">
-      <div
-        id="skillsCarouselWithControls"
-        class="carousel slide"
-        data-ride="false"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#skillsCarouselWithControls"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#skillsCarouselWithControls" data-slide-to="1"></li>
-          <li data-target="#skillsCarouselWithControls" data-slide-to="2"></li>
-          <li data-target="#skillsCarouselWithControls" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="carousel-box col-lg-6">
-                <div class="skill-icons">
-                  <i class="skill-icon fab fa-html5 fa-5x"></i>
-                  <i class="skill-icon fab fa-css3-alt fa-5x"></i>
-                  <i class="skill-icon fab fa-js fa-5x"></i>
-                </div>
-                <h3 class="object-heading">Web Development</h3>
-                <p>Web Development Fundamentals. HTML, CSS and JavaScript.</p>
-              </div>
-              <div class="carousel-box col-lg-6">
-                <div class="skill-icons">
-                  <i class="skill-icon fab fa-react fa-5x"></i>
-                  <i class="skill-icon fab fa-bootstrap fa-5x"></i>
-                </div>
-                <h3 class="object-heading">Front-end Frameworks</h3>
-                <p>
-                  Implementing reponsive web-design through modern frameworks
-                  such as Bootstrap 4 and React JS
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="carousel-box col-lg-6">
-                <div class="skill-icons">
-                  <i class="skill-icon fas fa-link fa-5x"></i>
-                </div>
-                <h3 class="object-heading">API's</h3>
-                <p>
-                  Modelling and Designing API's. RESTFul Services, gRPC
-                  Communication and SOAP
-                </p>
-              </div>
-              <div class="carousel-box col-lg-6">
-                <div class="skill-icons">
-                  <i class="skill-icon fas fa-rocket fa-5x"></i>
-                </div>
-                <h3 class="object-heading">API Tools</h3>
-                <p>Swagger Codegen, Postman</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="carousel-box col-lg-6">
-                <div class="skill-icons">
-                  <i class="skill-icon fab fa-node fa-5x"></i>
-                  <i class="skill-icon fas fa-server fa-5x"></i>
-                </div>
-                <h3 class="object-heading">Back-end development</h3>
-                <p>Node.js, Express.js and Database Fundamentals</p>
-              </div>
-              <div class="carousel-box col-lg-6">
-                <div class="skill-icons">
-                  <i class="skill-icon fas fa-database fa-5x"></i>
-                </div>
-                <h3 class="object-heading">SQL and NoSQL Database Exposure</h3>
-                <p>
-                  Working with database schemas, Querying databases with T-SQL.
-                  NoSQL with MongoDB and Mongoose
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="carousel-box col-lg-6">
-                <div class="skill-icons">
-                  <i class="skill-icon fab fa-java fa-5x"></i>
-                  <i class="skill-icon fab fa-python fa-5x"></i>
-                  <i class="skill-icon fas fa-cubes fa-5x"></i>
-                </div>
-                <h3 class="object-heading">Programming</h3>
-                <p>
-                  Java, Python, Springboot Microservices and a bit of C#/C++
-                </p>
-              </div>
-              <div class="carousel-box col-lg-6">
-                <div class="skill-icons">
-                  <i class="skill-icon fas fa-infinity fa-5x"></i>
-                  <i class="skill-icon fab fa-docker fa-5x"></i>
-                </div>
-                <h3 class="object-heading">Bonuses</h3>
-                <p>
-                  SBE/BDD Automation, CI/CD Pipelines, Docker, Experience
-                  working in an Agile Team
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="social-icons">
+          <a class="icon" href="https://github.com/P-Sanket" target="_blank">
+            <i class=" fab fa-github"></i>
+          </a>
+          <a class="icon" href="https://www.linkedin.com/in/psanket98" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#skillsCarouselWithControls"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-button"
-            ><i class="fas fa-chevron-circle-left fa-2x"></i
-          ></span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#skillsCarouselWithControls"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-button"
-            ><i class="fas fa-chevron-circle-right fa-2x"></i
-          ></span>
-        </a>
-      </div>
-    </section>
+      </nav>
 
-    <section id="work">
-      <div
-        id="workCarouselWithControls"
-        class="carousel slide"
-        data-ride="false"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="carousel-box col-lg-12">
-                <i class="work-icon fas fa-business-time fa-5x"></i>
-                <h3 class="object-heading">Project</h3>
-                <p>Brief Project Details</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="carousel-box col-lg-12">
-                <i class="work-icon fas fa-business-time fa-5x"></i>
-                <h3 class="object-heading">Project</h3>
-                <p>Brief Project Details</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="carousel-box col-lg-12">
-                <i class="work-icon fas fa-business-time fa-5x"></i>
-                <h3 class="object-heading">Project</h3>
-                <p>Brief Project Details</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#workCarouselWithControls"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-button"
-            ><i class="fas fa-chevron-circle-left fa-2x"></i
-          ></span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#workCarouselWithControls"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-button"
-            ><i class="fas fa-chevron-circle-right fa-2x"></i
-          ></span>
-        </a>
-      </div>
-    </section>
-
-    <section id="about">
+      <!-- Intro Text -->
       <div class="row">
-        <div class="about-content-pic col-lg-6">
-          <img
-            class="profile-pic"
-            src="./images/Profile_picture.jpg"
-            alt="profile picture"
-          />
+        <div class="col-lg-12 text-center intro">
+          <h1>I'm Sanket</h1>
         </div>
-        <div class="col-lg-6">
-          <h3 class="about-intro-line">
-            I'm Sanket. Ready and eager to add a ton of value to your
-            organization and expand my experince on Software Development.
-          </h3>
-          <p class="about-para">
-            A recent graduate with a sizeable amount of development exposure to
-            various languages, frameworks and techniques, I continiously strive
-            to bring quality to any work I undertake. A team player with a
-            curious mind.
+        <div class="col-lg-12 text-center intro">
+          <p class="intro-line">
+            Tech. Enthusiast | Loves Programming | Avid Gamer
           </p>
-          <p class="about-para">
-            Progrmamming in general; Front-end, Back-end, API's, Frameworks,
-            Handling Data, are some of many things that get me going. I believe
-            in delivering world-class, content-rich applications. Quality over
-            quantity.
-          </p>
-          <p class="about-para">
-            I'm not just all about coding! Besides that, you'll find me gaming,
-            going for hikes, cooking delicious food and exploring new things and
-            places.
-          </p>
+        </div>
+        <div class="col-lg-12">
+          <a class="" href="#skills">
+            <div class="arrow"></div>
+          </a>
+
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="col-lg-12">
+      <h2>Skills</h2>
+    </div>
+    <div id="skillsCarouselWithControls" class="carousel slide" data-ride="false">
+      <ol class="carousel-indicators">
+        <li data-target="#skillsCarouselWithControls" data-slide-to="0" class="active"></li>
+        <li data-target="#skillsCarouselWithControls" data-slide-to="1"></li>
+        <li data-target="#skillsCarouselWithControls" data-slide-to="2"></li>
+        <li data-target="#skillsCarouselWithControls" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="carousel-box col-lg-6">
+              <div class="skill-icons">
+                <i class="skill-icon fab fa-html5 fa-5x"></i>
+                <i class="skill-icon fab fa-css3-alt fa-5x"></i>
+                <i class="skill-icon fab fa-js fa-5x"></i>
+              </div>
+              <h3 class="object-heading">Web Development</h3>
+              <p>Web Development Fundamentals. HTML, CSS and JavaScript.</p>
+            </div>
+            <div class="carousel-box col-lg-6">
+              <div class="skill-icons">
+                <i class="skill-icon fab fa-react fa-5x"></i>
+                <i class="skill-icon fab fa-bootstrap fa-5x"></i>
+              </div>
+              <h3 class="object-heading">Front-end Frameworks</h3>
+              <p>
+                Implementing reponsive web-design through modern frameworks
+                such as Bootstrap 4 and React JS
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="carousel-box col-lg-6">
+              <div class="skill-icons">
+                <i class="skill-icon fas fa-link fa-5x"></i>
+              </div>
+              <h3 class="object-heading">API's</h3>
+              <p>
+                Modelling and Designing API's. RESTFul Services, gRPC
+                Communication and SOAP
+              </p>
+            </div>
+            <div class="carousel-box col-lg-6">
+              <div class="skill-icons">
+                <i class="skill-icon fas fa-rocket fa-5x"></i>
+              </div>
+              <h3 class="object-heading">API Tools</h3>
+              <p>Swagger Codegen, Postman</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="carousel-box col-lg-6">
+              <div class="skill-icons">
+                <i class="skill-icon fab fa-node fa-5x"></i>
+                <i class="skill-icon fas fa-server fa-5x"></i>
+              </div>
+              <h3 class="object-heading">Back-end development</h3>
+              <p>Node.js, Express.js and Database Fundamentals</p>
+            </div>
+            <div class="carousel-box col-lg-6">
+              <div class="skill-icons">
+                <i class="skill-icon fas fa-database fa-5x"></i>
+              </div>
+              <h3 class="object-heading">SQL and NoSQL Database Exposure</h3>
+              <p>
+                Working with database schemas, Querying databases with T-SQL.
+                NoSQL with MongoDB and Mongoose
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="carousel-box col-lg-6">
+              <div class="skill-icons">
+                <i class="skill-icon fab fa-java fa-5x"></i>
+                <i class="skill-icon fab fa-python fa-5x"></i>
+                <i class="skill-icon fas fa-cubes fa-5x"></i>
+              </div>
+              <h3 class="object-heading">Programming</h3>
+              <p>
+                Java, Python, Springboot Microservices and a bit of C#/C++
+              </p>
+            </div>
+            <div class="carousel-box col-lg-6">
+              <div class="skill-icons">
+                <i class="skill-icon fas fa-infinity fa-5x"></i>
+                <i class="skill-icon fab fa-docker fa-5x"></i>
+              </div>
+              <h3 class="object-heading">Bonuses</h3>
+              <p>
+                SBE/BDD Automation, CI/CD Pipelines, Docker, Experience
+                working in an Agile Team
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#skillsCarouselWithControls" role="button" data-slide="prev">
+        <span class="carousel-control-button"><i class="fas fa-chevron-circle-left fa-2x"></i></span>
+      </a>
+      <a class="carousel-control-next" href="#skillsCarouselWithControls" role="button" data-slide="next">
+        <span class="carousel-control-button"><i class="fas fa-chevron-circle-right fa-2x"></i></span>
+      </a>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="col-lg-12">
+      <h2>Projects</h2>
+    </div>
+    <div id="workCarouselWithControls" class="carousel slide" data-ride="false">
+      <ol class="carousel-indicators work-carousel-indicators">
+        <li data-target="#workCarouselWithControls" data-slide-to="0" class="active"></li>
+        <li data-target="#workCarouselWithControls" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="carousel-box col-lg-6">
+              <div class="">
+                <i class="work-icon fas fa-cogs fa-9x"></i>
+              </div>
+            </div>
+            <div class="carousel-box col-lg-6">
+              <h3 class="object-heading project-heading">Test Automation Framework</h3>
+              <p class="project-details">Working alongside a very capable Agile Team, I gained valuable experience in
+                programming for various test
+                Frameworks in Java. I mainly worked on integrating third party connectors. Throughout my time in the
+                project I gained valuable hands-on experience in progamming and testing API's, Microservices, Building
+                Rest Templates and ustilizing and orchestrating Docker containers.A more detailed account is
+                available on my CV</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="carousel-box col-lg-6">
+              <div class="">
+                <i class="work-icon fab fa-react fa-5x fa-9x"></i>
+              </div>
+            </div>
+            <div class="carousel-box col-lg-6">
+              <h3 class="object-heading project-heading">React Project</h3>
+              <p class="project-details">I have recently gotten back into ReactJS and in doing so I have an ongoing
+                personal project to
+                upgrade this website to
+                utilize the React Framework</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a class="carousel-control-prev" href="#workCarouselWithControls" role="button" data-slide="prev">
+          <span class="carousel-control-button"><i class="fas fa-chevron-circle-left fa-2x"></i></span>
+        </a>
+        <a class="carousel-control-next" href="#workCarouselWithControls" role="button" data-slide="next">
+          <span class="carousel-control-button"><i class="fas fa-chevron-circle-right fa-2x"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="col-lg-12">
+      <h2>About Me</h2>
+    </div>
+    <div class="row">
+      <div class="about-content-pic col-lg-6">
+        <img class="profile-pic" src="./images/Profile_picture.jpg" alt="profile picture" />
+      </div>
+      <div class="col-lg-6">
+        <h3 class="about-intro-line">
+          I'm Sanket. Ready and eager to add a ton of value to your
+          organization and expand my experince on Software Development.
+        </h3>
+        <p class="about-para">
+          A recent graduate with a sizeable amount of development exposure to
+          various languages, frameworks and techniques, I continiously strive
+          to bring quality to any work I undertake. A team player with a
+          curious mind.
+        </p>
+        <p class="about-para">
+          Progrmamming in general; Front-end, Back-end, API's, Frameworks,
+          Handling Data, are some of many things that get me going. I believe
+          in delivering world-class, content-rich applications. Quality over
+          quantity.
+        </p>
+        <p class="about-para">
+          I'm not just all about coding! Besides that, you'll find me gaming,
+          going for hikes, cooking delicious food and exploring new things and
+          places.
+        </p>
+        <p class="about-para email">
+          Email: sanket1998@outlook.com
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>

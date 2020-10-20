@@ -1,191 +1,221 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  color: #eeeeee;
-  font-family: "Montserrat", sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #eeeeee;
+	font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-  font-family: "Sacramento", cursive;
-  font-size: 10rem;
-  padding: 1.5rem 0;
-  margin: 1.2rem auto 0 auto;
+	font-family: "Sacramento", cursive;
+	font-size: 10rem;
+	padding: 1.5rem 0;
+	margin: 1.2rem auto 0 auto;
+}
+
+h2 {
+	font-family: "Quicksand", sans-serif;
+	line-height: 1.5;
+	padding: 2%;
 }
 
 h3 {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.5rem;
+	font-family: "Quicksand", sans-serif;
+	font-size: 1.5rem;
 }
 
 .carousel-indicators .active {
-  background-color: #00adb5;
+	background-color: #00adb5;
 }
 
 .carousel-indicators li {
-  background-color: #393e46;
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 100%;
+	background-color: #393e46;
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 100%;
 }
 
 .carousel-control-button {
-  color: #00adb5;
+	color: #00adb5;
 }
 
 .carousel-item {
-  padding: 7% 17%;
+	padding: 7% 17%;
 }
 
 .carousel-box {
-  padding: 5%;
+	padding: 5%;
 }
 
 .object-heading {
-  font-family: "Quicksand", sans-serif;
+	font-family: "Quicksand", sans-serif;
 }
 
 /* Navigation Bar  and Landing Page*/
 #landingPage {
-  position: relative;
-  background-color: #222831;
-  padding-bottom: 7%;
+	position: relative;
+	background-color: #222831;
+	padding-bottom: 7%;
 }
 
 .container-fluid {
-  padding: 2% 3%;
+	padding: 2% 3%;
 }
 
 .navbar {
-  font-size: 1.5rem;
-  padding: 0 0 4rem;
+	font-size: 1.5rem;
+	padding: 0 0 4rem;
 }
 
 .navbar-nav {
-  padding: 2%;
+	padding: 2%;
 }
 
 .nav-item {
-  padding: 0 12px;
+	padding: 0 12px;
 }
 
 .nav-link {
-  font-weight: 100;
-  color: #00adb5;
+	font-weight: 100;
+	color: #00adb5;
 }
 
 .nav-item:hover .nav-link {
-  color: #eeeeee;
+	color: #eeeeee;
 }
 
 .navbar-toggler-icon {
-  color: #00adb5;
+	color: #00adb5;
 }
 
 .navbar-toggler:focus {
-  outline: none;
+	outline: none;
 }
 
 .intro {
-  padding: 3%;
+	padding: 3%;
 }
 
 .intro-line {
-  font-size: 1rem;
-  line-height: 1.5;
-  padding: 0.5rem 1.5rem 1.5rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	padding: 0.5rem 1.5rem 1.5rem;
 }
 
 .background {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 /* Skills Section */
 #skills {
-  background-color: #eeeeee;
-  color: #222831;
-  text-align: center;
-  padding: 3%;
+	background-color: #eeeeee;
+	color: #222831;
+	text-align: center;
+	padding: 3%;
 }
 
 .skill-icons {
-  padding: 3%;
+	padding: 3%;
 }
 
 .skill-icon {
-  color: #393e46;
-  margin: 1rem;
+	color: #393e46;
+	margin: 1rem;
 }
 
 .skill-icon:hover {
-  color: #222831;
+	color: #222831;
 }
 
 /* Work Section */
 #work {
-  background-color: #393e46;
-  text-align: center;
+	background-color: #393e46;
+	text-align: center;
+	padding: 3%;
+}
+
+.work-carousel-indicators li {
+	background-color: #eeeeee;
 }
 
 .work-icon {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
+	padding: 5%;
 }
 
 .work-icon:hover {
-  color: #00adb5;
+	color: #00adb5;
+}
+
+.project-heading {
+	text-align: left;
+	line-height: 1.5;
+}
+
+.project-details {
+	text-align: left;
+	line-height: 1.5;
 }
 
 /* About section */
 #about {
-  background-color: #eeeeee;
-  padding: 3% 5%;
-  text-align: center;
-  color: #393e46;
+	background-color: #eeeeee;
+	padding: 3%;
+	text-align: center;
+	color: #393e46;
 }
 
 .about-content-pic {
-  padding: 2%;
-  text-align: center;
+	padding: 2%;
+	text-align: center;
 }
 
 .profile-pic {
-  width: 300px;
-  height: 350px;
-  border-radius: 100%;
-  padding: 2%;
-  margin: auto;
+	width: 300px;
+	height: 350px;
+	border-radius: 100%;
+	padding: 2%;
+	margin: auto;
 }
 
 .about-intro-line {
-  font-weight: 600;
-  text-align: left;
-  padding: 1%;
-  line-height: 1.5;
-  margin: 1% auto;
+	font-weight: 600;
+	text-align: left;
+	padding: 1%;
+	line-height: 1.5;
+	margin: 1% auto;
 }
 
 .about-para {
-  text-align: left;
-  line-height: 1.5;
-  padding: 1%;
-  margin: 1% auto;
+	text-align: left;
+	line-height: 1.5;
+	padding: 1%;
+	margin: 1% auto;
+}
+
+.email:hover {
+	color: #00adb5;
 }
 
 /* Media queries */
 @media (max-width: 750px) {
-  .profile-pic {
-    width: 50%;
-    height: 100%;
-  }
+	.profile-pic {
+		width: 50%;
+		height: 100%;
+	}
 
-  h1 {
-    font-size: 10vmax;
-  }
+	h1 {
+		font-size: 10vmax;
+	}
 
-  .intro-line {
-    font-size: 1.5vmax;
-  }
+	.intro-line {
+		font-size: 1.5vmax;
+	}
 }
